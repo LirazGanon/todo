@@ -1,0 +1,95 @@
+
+body{
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(250, 249, 249)
+}
+
+h1,a{
+    color: rgb(130, 130, 177);
+}
+*{
+    color: rgb(63, 63, 111);
+}
+
+.flex {
+display: flex;
+}
+.flex.col {
+flex-direction: column;
+}
+.flex.space-between {
+justify-content: space-between;
+}
+.flex.align-center {
+align-items: center;
+}
+.flex.justify-center {
+justify-content: center;
+}
+.center {
+display: grid;
+place-items: center;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+li > *,
+form>*{
+    font-size: 1rem;
+    padding:5px 10px;
+}
+
+ul.todo-list-container{
+    width: 85%;
+}
+
+li.todo-list-item{
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(200px, 1fr) );
+}
+
+.todo-list-details,
+li.todo-list-item,
+form>* {
+    border: 1px solid lavender;
+}
+
+.line-mark{
+    text-decoration: line-through;
+}
+
+.maximize{
+max-height:300px;
+transition:max-height 1s;
+}
+.hideLine{
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.alert {
+    color:white;
+    padding: 10px;
+    font-size: 1.4em;
+    position: absolute;
+    top:10px;
+    right:10px;
+    background-color: grey;
+}
+
+.alert-success {
+    background-color: rgb(15, 122, 15);
+}
+.alert-danger {
+    background-color: rgb(122, 11, 11);
+}
